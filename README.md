@@ -102,5 +102,115 @@ inhoa proc
    
 inhoa endp
 ```
-     bài 3
+bài 3
+```
+.model small
+.stack 100h
+.data
+        tb1 db 'nhap chuoi: $ ' 
+        tb2 db 10,13, 'do dai cua chuoi la: $'
+        s db 100, dup('$')
+        x dw ?    
+.code
+main proc
+        mov ax, @data
+        mov ds, ax
+        
+        ;nhap chuoi
+        mov ah,9
+        lea dx,tb1
+        int 21h
+        
+        mov ah,10
+        lea dx,s
+        int 21h
+        
+        ;do dai chuoi
+        mov ah,9
+        lea dx,tb2
+        int 21h
+        
+        mov ax,0
+        mov al,s+1 ; chuyen chieu dai chuoi vao al
+        mov x,ax ; chuyen ax vao x
+        
+        call print
+        
+        mov ah,4
+        int 21h
+        
+main endp
+
+;hien thi
+print proc
+    mov ax, x
+    mov bx, 10
+    mov cx, 0
+    
+    chia:
+        mov dx, 0
+        div bx
+        push dx
+        inc cx
+        cmp al,0
+        je hienthi
+        jmp chia
+    hienthi:
+        pop dx
+        add dl,30h
+        mov ah,2
+        int 21h
+        dec cx
+        cmp cx,0
+        jne hienthi
+        ret
+print endp
+
+end main
+```
+bài 4
+```
+.model small
+.stack 100h
+.data
+    array db 100 dup('$')
+        
+.code
+main proc
+        mov ax, @data
+        mov ds, ax
+        
+        mov bl,0
+        mov si, offset array
+        
+        loop:
+            mov ah,1
+            int 21h
+            
+            cmp al,13
+            je s1
+            mov [si], al
+            inc si        ; tang gia tri index cua array
+            inc bl         ; tang count 
+            jmp loop
+            
+        s1:
+            mov cl,bl   
+            
+        p1:
+            dec si            ;giam gia tri index cua array
+            mov dx,[si]       ;si = 0 se dung ctrinh
+            mov ah,2
+            int 21h
+            loop p1
+            
+            mov ah,4ch
+            int 21h
+        
+main endp  
+
+
+
+end main
+```
           
