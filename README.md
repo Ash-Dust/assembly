@@ -1,5 +1,5 @@
 # assembly
-khong biet j het :D
+
 
 bài 1 
 ```                
