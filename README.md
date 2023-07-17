@@ -3,6 +3,7 @@ khong biet j het :D
 
 
      bài 1 
+                '''
                 org 100h
                 
                 .data
@@ -40,7 +41,7 @@ khong biet j het :D
                     int 21h
                 
                 ret
-
+               '''
       bài 2
 
       
