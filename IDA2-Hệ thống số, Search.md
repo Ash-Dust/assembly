@@ -69,7 +69,7 @@ Này vào mục search của IDA thoyy
     # Next data: như trên nhưng thay câu lệnh(code) = data
 
     # Next Explored và Next Unexplored: các vùng không được phát hiện là lệnh hoặc dữ liệu hợp lệ  
-   ~~///[ ko hiểu lắm, sau này sẽ quay lại]~~
+   ~~///[ ko hiểu lắm, sau này cần dùng sẽ quay lại]~~
 
     # Immediate Value – Search Next Immediate Value: Tìm kiếm giá trị chỉ định
           **Find all occurences** : tìm tiếm tất cả 
