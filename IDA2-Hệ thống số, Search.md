@@ -52,6 +52,7 @@
               DEC  97 ->122: từ a - z
 
 Có thể sử dụng hàm chr() để chuyển từ hex sang ASCII
+
 ![image](https://user-images.githubusercontent.com/120457430/255154915-fdcf38af-bad4-4e51-bb4e-999dd9100a2f.png)
 
 Ngoài ra có thể dùng Hex View-1
@@ -68,7 +69,7 @@ Này vào mục search của IDA thoyy
     # Next data: như trên nhưng thay câu lệnh(code) = data
 
     # Next Explored và Next Unexplored: các vùng không được phát hiện là lệnh hoặc dữ liệu hợp lệ  
-    ~~///[ ko hiểu lắm, sau này sẽ quay lại]~~
+   ~~///[ ko hiểu lắm, sau này sẽ quay lại]~~
 
     # Immediate Value – Search Next Immediate Value: Tìm kiếm giá trị chỉ định
           **Find all occurences** : tìm tiếm tất cả 
