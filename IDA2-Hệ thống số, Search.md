@@ -1,5 +1,5 @@
 # P2
-```
+
 ## Hệ thống số ###
    
 
@@ -83,4 +83,4 @@ Này vào mục search của IDA thoyy
     Chức năng này cho phép tìm kiếm byte đầu tiên không thuộc về bất kỳ hàm nào. Đôi khi có những hàm mà IDA không thể xác định 
 đó là hàm nhưng chúng lại có các lệnh hợp lệ.
     
-```
+
