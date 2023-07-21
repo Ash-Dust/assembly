@@ -1,0 +1,5 @@
+##Loader
+Khi bỏ file vào IDA sẽ có một phân tích tĩnh (Loader) để phân tích file.
+Ở chế độ Loader này, chương trình sẽ không được thực thi, nhưng nó được IDA phân tích và sau cùng sẽ tạo ra một file .idb
+– là cơ sở dữ liệu lưu các thông tin trong quá trình phân tích, bao gồm đổi tên biến, tên hàm, các chú thích…. 
+Trên thực tế, file .idb sẽ là tổng hợp của 5 files(.id0, .id1, .nam, .id2, and .til) được sinh ra trong quá trình phân tích
