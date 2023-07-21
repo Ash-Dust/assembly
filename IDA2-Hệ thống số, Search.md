@@ -60,6 +60,7 @@ Ngoài ra có thể dùng Hex View-1
 ------------------------------------------------------------------------------------------------------------------------------------------
 ## IDA search
 Này vào mục search của IDA thoyy
+
 ![image](https://github.com/Ash-Dust/upload-picture/assets/120457430/eeb4d2a8-51e3-49e6-8da9-03b8f6665310)
 
     # Next code: theo mình hiểu là nó sẽ search cái câu lệnh (code) tiếp theo
@@ -80,7 +81,6 @@ Này vào mục search của IDA thoyy
     ![image](https://github.com/Ash-Dust/upload-picture/assets/120457430/28fb4955-dfac-446e-bf6e-b5acc6b61165)
 
     # Not Function
-    Chức năng này cho phép tìm kiếm byte đầu tiên không thuộc về bất kỳ hàm nào. Đôi khi có những hàm mà IDA không thể xác định 
-đó là hàm nhưng chúng lại có các lệnh hợp lệ.
+    Chức năng này cho phép tìm kiếm byte đầu tiên không thuộc về bất kỳ hàm nào. Đôi khi có những hàm mà IDA không thể xác định đó là hàm nhưng chúng lại có các lệnh hợp lệ.
     
 
